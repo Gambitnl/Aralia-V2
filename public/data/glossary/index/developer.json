@@ -1,0 +1,12 @@
+[
+  {
+    "id": "dev_test_entry",
+    "title": "Developer Test Entry (Custom Style)",
+    "category": "Developer",
+    "tags": ["test", "dev", "styling", "bard"],
+    "excerpt": "A test entry to verify custom styling within the glossary display. Content is about a Bard's Repertoire.",
+    "aliases": ["test entry", "dev entry"],
+    "seeAlso": [],
+    "filePath": "/data/glossary/entries/dev/test_entry.md"
+  }
+]

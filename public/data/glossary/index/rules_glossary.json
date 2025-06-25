@@ -1,0 +1,43 @@
+
+[
+  {
+    "id": "expertise",
+    "title": "Expertise",
+    "category": "Rules Glossary",
+    "tags": ["rules", "skill", "proficiency bonus", "ability check"],
+    "excerpt": "A feature that doubles your proficiency bonus for chosen skills or tools, representing exceptional mastery in those areas.",
+    "aliases": ["skill expertise", "tool expertise"],
+    "seeAlso": ["proficiency_bonus", "proficiency"],
+    "filePath": "/data/glossary/entries/rules/expertise.md"
+  },
+  {
+    "id": "proficiency",
+    "title": "Proficiency",
+    "category": "Rules Glossary",
+    "tags": ["rules", "character", "d20 test", "skill", "saving throw", "weapon", "tool"],
+    "excerpt": "Represents a character's training and aptitude, allowing them to add their proficiency bonus to D20 tests like ability checks, attack rolls, and saving throws related to skills, weapons, tools, or saving throws they are proficient in.",
+    "aliases": ["proficient"],
+    "seeAlso": ["proficiency_bonus", "ability_check", "attack_roll", "saving_throw", "skills_list", "weapons", "tools", "expertise"],
+    "filePath": "/data/glossary/entries/rules/proficiency.md"
+  },
+  {
+    "id": "proficiency_bonus",
+    "title": "Proficiency Bonus",
+    "category": "Rules Glossary",
+    "tags": ["rules", "character", "d20 test", "leveling"],
+    "excerpt": "A bonus added to D20 tests for which a character is proficient. It increases as a character gains levels.",
+    "aliases": ["prof bonus"],
+    "seeAlso": ["proficiency", "character_level"],
+    "filePath": "/data/glossary/entries/rules/proficiency_bonus.md"
+  },
+  {
+    "id": "spells_chapter",
+    "title": "Spells (Chapter Overview)",
+    "category": "Rules Glossary",
+    "tags": ["rules", "magic", "spellcasting", "core mechanic"],
+    "excerpt": "A general introduction to how spells function in the game, covering fundamental concepts. Detailed rules are found in sub-entries under 'Spellcasting Mechanics'.",
+    "aliases": ["spell rules", "magic rules", "spellcasting overview"],
+    "seeAlso": ["gaining_spells", "spell_level_slots", "school_of_magic", "casting_time_rules", "spell_range_rules", "spell_components_rules", "spell_duration_rules", "spell_effects_rules", "spell_scroll", "magic_action"],
+    "filePath": "/data/glossary/entries/rules/spells_overview.md"
+  }
+]

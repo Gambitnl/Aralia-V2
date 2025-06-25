@@ -1,0 +1,123 @@
+
+[
+  {
+    "id": "barbarian",
+    "title": "Barbarian (Class)",
+    "category": "Character Classes",
+    "tags": ["class", "character creation", "rage", "martial", "unarmored defense", "berserker", "primal path"],
+    "excerpt": "A fierce warrior who channels primal fury to become a devastating force on the battlefield, often shunning heavy armor for agility and raw power.",
+    "aliases": ["berserker", "savage", "rager"],
+    "seeAlso": ["rage", "unarmored_defense_barbarian", "reckless_attack", "primal_knowledge"],
+    "filePath": "/data/glossary/entries/classes/barbarian.md"
+  },
+  {
+    "id": "bard",
+    "title": "Bard (Class)",
+    "category": "Character Classes",
+    "tags": ["class", "character creation", "bardic inspiration", "spellcasting", "jack of all trades", "expertise", "lore", "music", "college of lore"],
+    "excerpt": "A master of song, speech, and the magic they contain, Bards use their artistic talents to work magic, inspire allies, and manipulate foes, often specializing in lore and versatile skills.",
+    "aliases": ["minstrel", "skald", "troubadour", "chanter", "lore master"],
+    "seeAlso": ["bardic_inspiration_feature", "spellcasting", "jack_of_all_trades_feature", "expertise", "college_of_lore_subclass", "spells_chapter", "proficiency_bonus", "d20_test"],
+    "filePath": "/data/glossary/entries/classes/bard.md"
+  },
+  {
+    "id": "cleric",
+    "title": "Cleric (Class)",
+    "category": "Character Classes",
+    "tags": ["class", "character creation", "divine magic", "spellcasting", "channel divinity", "healing", "turn undead", "divine order", "life domain"],
+    "excerpt": "A priestly champion who wields divine magic in service of a higher power, be it a god, a pantheon, or a divine force or philosophy.",
+    "aliases": ["priest", "healer", "divine caster"],
+    "seeAlso": ["spellcasting", "channel_divinity_feature", "turn_undead_feature", "divine_order_feature", "life_domain_subclass", "spells_chapter", "proficiency_bonus"],
+    "filePath": "/data/glossary/entries/classes/cleric.md"
+  },
+  {
+    "id": "druid",
+    "title": "Druid (Class)",
+    "category": "Character Classes",
+    "tags": ["class", "character creation", "nature magic", "spellcasting", "wild shape", "primal order", "circle of the land"],
+    "excerpt": "A priest of the Old Faith, wielding the powers of nature—moonlight and plant growth, fire and lightning—and adopting animal forms.",
+    "aliases": ["nature priest", "shapeshifter", "wild shaper"],
+    "seeAlso": ["spellcasting", "wild_shape_feature", "druidic_feature", "primal_order_feature", "circle_of_the_land_subclass", "spells_chapter", "proficiency_bonus"],
+    "filePath": "/data/glossary/entries/classes/druid.md"
+  },
+  {
+    "id": "fighter",
+    "title": "Fighter (Class)",
+    "category": "Character Classes",
+    "tags": ["class", "character creation", "martial", "weapon mastery", "action surge", "second wind", "fighting style", "champion"],
+    "excerpt": "A master of martial combat, skilled with a variety of weapons and armor, known for their resilience and tactical prowess.",
+    "aliases": ["warrior", "knight", "soldier", "combatant"],
+    "seeAlso": ["fighting_style_feature", "second_wind_feature", "action_surge_feature", "weapon_mastery_feature", "champion_subclass", "proficiency_bonus"],
+    "filePath": "/data/glossary/entries/classes/fighter.md"
+  },
+  {
+    "id": "monk",
+    "title": "Monk (Class)",
+    "category": "Character Classes",
+    "tags": ["class", "character creation", "martial arts", "ki", "unarmored defense", "unarmored movement", "stunning strike"],
+    "excerpt": "A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection.",
+    "aliases": ["martial artist", "ascetic"],
+    "seeAlso": ["martial_arts_feature", "ki_points", "unarmored_defense_monk", "stunning_strike_feature", "way_of_the_open_hand_subclass", "proficiency_bonus"],
+    "filePath": "/data/glossary/entries/classes/monk.md"
+  },
+  {
+    "id": "paladin",
+    "title": "Paladin (Class)",
+    "category": "Character Classes",
+    "tags": ["class", "character creation", "divine magic", "oath", "smite", "lay on hands", "auras"],
+    "excerpt": "A holy warrior bound by an oath to stand against the forces of annihilation and corruption, wielding divine power and martial skill.",
+    "aliases": ["holy warrior", "knight errant", "divine champion"],
+    "seeAlso": ["lay_on_hands_feature", "divine_smite_spell", "channel_divinity_paladin", "aura_of_protection_feature", "oath_of_devotion_subclass", "spellcasting"],
+    "filePath": "/data/glossary/entries/classes/paladin.md"
+  },
+  {
+    "id": "ranger",
+    "title": "Ranger (Class)",
+    "category": "Character Classes",
+    "tags": ["class", "character creation", "martial", "spellcasting", "favored enemy", "nature", "wilderness", "hunter", "exploration"],
+    "excerpt": "A warrior of the wilderness who uses martial prowess and nature magic to combat threats on the edges of civilization, often excelling in tracking and surviving in harsh environments.",
+    "aliases": ["woodsman", "tracker", "hunter", "stalker"],
+    "seeAlso": ["favored_enemy_feature", "spellcasting", "deft_explorer_feature", "fighting_style_feature", "hunter_subclass", "proficiency_bonus", "spells_chapter"],
+    "filePath": "/data/glossary/entries/classes/ranger.md"
+  },
+  {
+    "id": "rogue",
+    "title": "Rogue (Class)",
+    "category": "Character Classes",
+    "tags": ["class", "character creation", "stealth", "sneak attack", "thieves' tools", "cunning action", "thief", "skills"],
+    "excerpt": "A scoundrel who uses stealth and trickery to overcome obstacles and enemies, excelling in skills like subterfuge, evasion, and disabling traps.",
+    "aliases": ["thief", "assassin", "scout", "trickster"],
+    "seeAlso": ["sneak_attack_feature", "cunning_action_feature", "expertise", "thieves_cant_feature", "thief_subclass", "proficiency_bonus"],
+    "filePath": "/data/glossary/entries/classes/rogue.md"
+  },
+  {
+    "id": "sorcerer",
+    "title": "Sorcerer (Class)",
+    "category": "Character Classes",
+    "tags": ["class", "character creation", "spellcasting", "innate magic", "sorcery points", "metamagic", "draconic sorcery"],
+    "excerpt": "A spellcaster who draws on inherent magic from a gifted bloodline or other extraordinary event, shaping reality through sheer force of will and arcane talent.",
+    "aliases": ["innate caster", "mage"],
+    "seeAlso": ["spellcasting", "sorcery_points_feature", "metamagic_feature", "draconic_sorcery_subclass", "proficiency_bonus", "spells_chapter"],
+    "filePath": "/data/glossary/entries/classes/sorcerer.md"
+  },
+  {
+    "id": "warlock",
+    "title": "Warlock (Class)",
+    "category": "Character Classes",
+    "tags": ["class", "character creation", "spellcasting", "pact magic", "eldritch invocations", "patron", "fiend patron"],
+    "excerpt": "A wielder of magic that is derived from a bargain with an extraplanar entity, channeling otherworldly power through their pact.",
+    "aliases": ["pact-maker", "invoker"],
+    "seeAlso": ["pact_magic_feature", "eldritch_invocations_feature", "warlock_patron_feature", "fiend_patron_subclass", "proficiency_bonus", "spells_chapter"],
+    "filePath": "/data/glossary/entries/classes/warlock.md"
+  },
+  {
+    "id": "wizard",
+    "title": "Wizard (Class)",
+    "category": "Character Classes",
+    "tags": ["class", "character creation", "spellcasting", "arcane magic", "spellbook", "arcane recovery", "evoker"],
+    "excerpt": "A scholarly magic-user who masters the arcane arts through intense study and manipulation of the fabric of reality.",
+    "aliases": ["mage", "arcanist", "sorcerer (colloquial)", "spell slinger"],
+    "seeAlso": ["spellcasting", "spellbook_feature", "arcane_recovery_feature", "wizard_schools", "evoker_subclass", "proficiency_bonus", "spells_chapter"],
+    "filePath": "/data/glossary/entries/classes/wizard.md"
+  }
+]
