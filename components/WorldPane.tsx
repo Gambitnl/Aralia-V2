@@ -4,7 +4,8 @@
  * player actions, and NPC dialogue. It automatically scrolls to the latest message.
  */
 import React, { useEffect, useRef } from 'react';
-import { GameMessage } from '../types';
+import { GameMessage } from '../types'; // Path relative to src/components/
+import Tooltip from './Tooltip'; // Import the new Tooltip component
 
 interface WorldPaneProps {
   messages: GameMessage[];
@@ -47,21 +48,74 @@ const WorldPane: React.FC<WorldPaneProps> = ({ messages }) => {
     }
   };
 
+  /**
+   * Processes message text to include tooltips for specific keywords.
+   * @param {string} text - The message text.
+   * @returns {React.ReactNode} The message text, potentially with Tooltip components.
+   */
+  const processMessageText = (text: string): React.ReactNode => {
+    const tooltipKeywords: Record<string, string> = {
+      'Aralia': 'The vibrant world where your adventure unfolds.',
+      'Oracle': 'A mysterious entity offering cryptic guidance.',
+      'Gemini': 'The advanced AI model powering this world\'s narrative and interactions.',
+      'NPC': 'Non-Player Character: Any character in the game not controlled by you.',
+      'HP': 'Hit Points: A measure of your character\'s health and vitality.',
+      'AC': 'Armor Class: Represents how difficult it is to hit your character in combat.',
+      'clearing': 'A sun-dappled opening in the forest, often a place of peace or transition.',
+      'ruins': 'The crumbling remnants of ancient structures, hinting at a forgotten past.'
+    };
+
+    const regex = new RegExp(`\\b(${Object.keys(tooltipKeywords).join('|')})\\b`, 'gi');
+    
+    const parts = text.split(regex);
+
+    return parts.map((part, index) => {
+      const lowerPart = part.toLowerCase();
+      const matchedKeyword = Object.keys(tooltipKeywords).find(kw => kw.toLowerCase() === lowerPart);
+
+      if (matchedKeyword) {
+        return (
+          <Tooltip
+            key={`${part}-${index}-tooltip`}
+            content={tooltipKeywords[matchedKeyword]}
+          >
+            <span 
+              className="text-sky-400 underline decoration-sky-500/70 decoration-dotted cursor-help"
+              tabIndex={0} // Make it focusable
+            >
+              {part}
+            </span>
+          </Tooltip>
+        );
+      }
+      return part;
+    });
+  };
+
+
   return (
-    <div className="flex-grow bg-gray-800 p-6 rounded-lg shadow-xl overflow-y-auto scrollable-content border border-gray-700 min-h-0"> {/* Added min-h-0 for flex-grow with overflow */}
-      <h2 className="text-2xl font-bold text-amber-400 mb-4 border-b-2 border-amber-500 pb-2">Log</h2>
+    <div className="flex-grow bg-gray-800 p-6 rounded-lg shadow-xl overflow-y-auto scrollable-content border border-gray-700 min-h-0">
+      {' '}
+      {/* Added min-h-0 for flex-grow with overflow */}
+      <h2 className="text-2xl font-bold text-amber-400 mb-4 border-b-2 border-amber-500 pb-2">
+        Log
+      </h2>
       <div className="space-y-3 text-lg leading-relaxed">
         {messages.map((msg) => (
-          <div key={msg.id} className={`p-2 rounded ${msg.sender === 'player' ? 'text-right' : ''}`}>
-            {/* Using dangerouslySetInnerHTML for potential HTML in messages from Gemini, ensure sanitization if used.
-                For now, assuming text is plain or simple markdown handled by browser.
-                A more robust solution would use a markdown parser.
-            */}
+          <div
+            key={msg.id}
+            className={`p-2 rounded ${
+              msg.sender === 'player' ? 'text-right' : ''
+            }`}
+          >
             <p className={`${getMessageStyle(msg.sender)}`}>
-              {msg.text}
+              {processMessageText(msg.text)}
             </p>
             <p className="text-xs text-gray-500 mt-1">
-              {new Date(msg.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+              {new Date(msg.timestamp).toLocaleTimeString([], {
+                hour: '2-digit',
+                minute: '2-digit',
+              })}
             </p>
           </div>
         ))}
